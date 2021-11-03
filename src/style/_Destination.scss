@@ -1,0 +1,89 @@
+.Destination{
+    color: white;
+    height: 100vh;  
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
+    display: flex;
+    align-items: center;
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        top: 50px;
+        height: 70vh;
+        
+    }
+    ul{
+        //background-color: pink;
+        li{
+            display: inline-block;
+            margin-left: 30px;
+            cursor: pointer;
+            font-size: 1rem;
+            &::after{
+                content: '';
+                position: relative;
+                display: block;
+                height: 3px;
+                
+            }
+            &:hover{
+                &::after{
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+
+.dest-title{
+    font-size: 1.75rem;
+    margin-left: 50px;
+    text-transform: uppercase;
+}
+
+.dest-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dest-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        height: 50vh;
+        width: 50vh;
+    }
+}
+.dest-content{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 200px;
+    hr{
+        height:  1px;
+        border-color: #383B4B;
+        
+    }
+    
+}
+.dest-name{
+    font-family: $bigtext;
+    text-transform: uppercase;
+    font-size: 6.25rem;
+}
+.dest-dist-time{
+    display: flex;
+    justify-content: space-around;
+    p{
+        font-size: 0.875rem;
+    }
+    .dist-time{
+        font-size: 1.75rem;
+    }
+}

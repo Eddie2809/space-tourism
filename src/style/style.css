@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+  overflow: hidden;
+}
+
+body, .App {
+  height: 100vh;
+  width: 100vw;
+}
+
+.none {
+  display: none;
+}
+
+.Home {
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+  background-image: url("../assets/home/background-home-desktop.jpg");
+  height: 100%;
+  color: white;
+}
+
+.Home .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 136px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-content {
+  width: 50%;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-explore {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.home-header {
+  font-size: 1.56rem;
+}
+
+.home-title {
+  font-size: 9.375rem;
+  font-family: "Bellefair", serif;
+}
+
+.home-text {
+  font-size: 1.125rem;
+}
+
+.explore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 274px;
+  height: 274px;
+  background-color: white;
+  color: black;
+  font-size: 2rem;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-family: "Bellefair", serif;
+}
+
+.Destination {
+  color: white;
+  height: 100vh;
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Destination .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  top: 50px;
+  height: 70vh;
+}
+
+.Destination ul li {
+  display: inline-block;
+  margin-left: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.Destination ul li::after {
+  content: '';
+  position: relative;
+  display: block;
+  height: 3px;
+}
+
+.Destination ul li:hover::after {
+  background-color: white;
+}
+
+.dest-title {
+  font-size: 1.75rem;
+  margin-left: 50px;
+  text-transform: uppercase;
+}
+
+.dest-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dest-image {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dest-image img {
+  height: 50vh;
+  width: 50vh;
+}
+
+.dest-content {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 200px;
+}
+
+.dest-content hr {
+  height: 1px;
+  border-color: #383B4B;
+}
+
+.dest-name {
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  font-size: 6.25rem;
+}
+
+.dest-dist-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.dest-dist-time p {
+  font-size: 0.875rem;
+}
+
+.dest-dist-time .dist-time {
+  font-size: 1.75rem;
+}
+
+.Navbar {
+  color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 2.7px;
+  position: absolute;
+  width: 100%;
+  height: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Navbar img {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 55px;
+}
+
+.Navbar .navbar-buttons-desktop {
+  height: 100%;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(80px) saturate(100%) brightness(130%);
+          backdrop-filter: blur(80px) saturate(100%) brightness(130%);
+}
+
+.Navbar .navbar-buttons-desktop::before {
+  content: '';
+  height: 2px;
+  width: 30%;
+  position: absolute;
+  left: 150px;
+}
+
+.Navbar .navbar-buttons-desktop ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+}
+
+.Navbar .navbar-buttons-desktop ul li {
+  margin-right: 48px;
+  height: 100%;
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: start;
+}
+
+.Navbar .navbar-buttons-desktop ul li::after {
+  content: '';
+  display: block;
+  height: 3px;
+  position: relative;
+}
+
+.Navbar .navbar-buttons-desktop ul li:hover::after {
+  background-color: white;
+}
+
+.Navbar .navbar-buttons-desktop ul li div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 93px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Crew {
+  background-image: url("../assets/crew/background-crew-desktop.jpg");
+  color: white;
+  height: 100vh;
+}
+
+.Crew .main {
+  position: relative;
+  top: 150px;
+  height: 75vh;
+}
+
+.Crew .main .title {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  margin-left: 50px;
+}
+
+.crew-memb-list li {
+  width: 15px;
+  height: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(80px) saturate(100%) brightness(130%);
+          backdrop-filter: blur(80px) saturate(100%) brightness(130%);
+  border-radius: 50%;
+}
+
+.crew-memb-list li:hover {
+  background-color: white;
+}
+
+.crew-memb-name {
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+  .hide-for-mobile {
+    display: none;
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .hide-for-tablet {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
