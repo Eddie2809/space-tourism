@@ -1,5 +1,143 @@
-.explore{
-    background-color: pink;
-    height: 710px;
-    width: 375px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
 }
+
+.subtitle{
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+.title, .bigtitle{
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+}
+
+.bodytext{
+    color: #D0D6F9;
+    font-family: 'Barlow', sans-serif;
+}
+
+.background{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+//Mobile
+@media screen and (max-width: 767px){
+    .Home,.Destination,.Crew,.Techonology{
+        display: grid;
+        grid-template-columns: 15px 1fr 15px;
+        grid-template-rows: 60px 30px 7fr 3fr 10fr 30px;
+    }
+    .background-desktop, .background-tablet{
+        display: none;
+    }
+    .subtitle{
+        font-size: 1rem;
+    }
+    .title{
+        font-size: 3.5rem;
+    }
+    .bigtitle{
+        font-size: 5rem;
+    }
+    .bodytext{
+        font-size: 0.9375rem;
+        line-height: 1.5625rem;
+    }
+    .Navbar{
+        grid-column-start: 2;
+        grid-row-start: 1;
+
+        #logo{
+            width: 40px;
+            height: 40px;
+        }
+        #hamb{
+            width: 24px;
+            height: 21px;
+        }
+
+        .navbar-buttons{
+            display: none;
+        }
+    }
+}
+
+//Tablet
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .Home,.Destination,.Crew,.Techonology{
+        display: grid;
+        grid-template-rows: 96px 75px 2fr 3fr 26px;
+        grid-template-columns: 40px 1fr 40px;
+    }
+    .background-desktop, .background-mobile, #hamb{
+        display: none;
+    }
+    .subtitle{
+        font-size: 1.25rem;
+    }
+    .title{
+        font-size: 5rem;
+    }
+    .bigtitle{
+        font-size: 9.375rem;
+    }
+    .bodytext{
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+    .Navbar{
+        grid-column: 1 / span 3;
+        grid-row-start: 1;
+        .navbar-buttons{
+            width: 80%;
+        }
+        img{
+            margin-left: 30px;
+        }
+    }
+}
+
+//Desktop
+@media screen and (min-width: 1024px){
+    .Navbar{
+        grid-column: 2 / span 3;
+        grid-row-start: 2;
+    }
+    .Home,.Destination,.Crew,.Techonology{
+        display: grid;
+        grid-template-columns: 30px 1fr 1fr 30px;
+        grid-template-rows: 40px 96px 40px 20px 1fr 40px;
+    }
+    .background-tablet, .background-mobile, #hamb{
+        display: none;
+    }
+    .bigtitle{
+        font-size: 9.375rem;
+    }
+    .title{
+        font-size: 6.25rem;
+    }
+    .subtitle{
+        font-size: 1.75rem;
+        letter-spacing: 0.295rem;
+    }
+    .bodytext{
+        line-height: 2rem;
+        font-size: 1.125rem;
+    }
+}
+/*@import 'Mobile';
+@import 'Tablet';
+@import 'Desktop';*/
+@import 'Home';
+@import 'Destination';
+@import 'Crew';
+@import 'Technology';
+@import 'Navbar'

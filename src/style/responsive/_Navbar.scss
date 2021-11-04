@@ -1,0 +1,40 @@
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    img{
+        height: 50px;
+        width: 50px;
+    }
+    
+    #hamb{
+        
+    }
+
+    .navbar-buttons{
+        letter-spacing: 0.16875rem;
+        
+        height: 100%;
+        width: 60%;
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(80px) saturate(100%) brightness(130%);
+
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            height: 100%;
+
+            li{
+                list-style: none;
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                font-size: 1.1rem;
+            }
+        }
+    }
+}

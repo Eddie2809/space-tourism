@@ -1,0 +1,100 @@
+.Home{
+    height: 100vh;
+    .contentContainer{
+        grid-column-start: 2;
+        grid-row-start: 5;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .exploreContainer{
+        grid-column-start: 3;
+        grid-row-start: 5;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .explore{
+            background-color: white;
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+        }
+    }
+}
+
+//Tablet
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .Home{
+        .contentContainer{
+            grid-column-start: 2;
+            grid-row-start: 3;
+        }
+
+        .exploreContainer{
+            grid-column-start: 2;
+            grid-row-start: 4;
+        }
+        .explore{
+            height: 274px;
+            width: 274px;
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+        .content{
+            width: 28.125rem;
+        }
+    }
+}
+
+//Mobile
+@media screen and (max-width: 767px){
+    .Home{
+        .contentContainer{
+            grid-row: 3 / span 2;
+            grid-column-start: 2;
+
+            max-width: 90vw;
+        }
+        .exploreContainer{
+            grid-row-start: 5;
+            grid-column-start: 2;
+        }
+
+        .explore{
+            width: 150px;
+            height: 150px;
+            font-size: 1.25rem;
+        }
+
+        .content{
+            width: 20.4375rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .bodytext{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .Home{
+        .explore{
+            height: 274px;
+            width: 274px;
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+        .content{
+            width: 28.125rem;
+        }
+    }
+}

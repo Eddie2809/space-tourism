@@ -52,6 +52,7 @@ class Destination extends Component{
     render(){
         return(
             <div className="Destination">
+                
                 <div className='content'>
                     <div className="dest-title"><strong>01</strong> pick your destination</div>
                     <div className="dest-info">
